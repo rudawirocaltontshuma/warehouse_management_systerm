@@ -43,7 +43,7 @@ export default function WarehousesPage() {
     <div className="flex flex-col gap-6">
       <PageHeader
         title="Warehouses"
-        description="All Nexora WMS distribution centres and their operational status."
+        description="All WMS distribution centres and their operational status."
         breadcrumbs={[{ label: "Warehouses" }]}
       />
       <DataTable

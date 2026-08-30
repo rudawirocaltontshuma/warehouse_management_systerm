@@ -44,7 +44,7 @@ export default function ProductsPage() {
     <div className="flex flex-col gap-6">
       <PageHeader
         title="Products"
-        description="The full Nexora WMS product catalog across all warehouses."
+        description="The full WMS product catalog across all warehouses."
         breadcrumbs={[{ label: "Products" }]}
       />
       <DataTable

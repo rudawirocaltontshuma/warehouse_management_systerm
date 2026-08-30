@@ -1,13 +1,13 @@
 const currentYear = new Date().getFullYear();
 
 export const APP_CONFIG = {
-  name: "Nexora WMS",
+  name: "WMS",
   tagline: "Warehouse Management Platform",
   version: "1.0.0",
-  copyright: `© ${currentYear}, Nexora WMS. Portfolio demonstration.`,
+  copyright: `© ${currentYear}, WMS. Portfolio demonstration.`,
   meta: {
-    title: "Nexora WMS — Warehouse Management Platform",
+    title: "WMS — Warehouse Management Platform",
     description:
-      "Nexora WMS is a frontend-only warehouse management system demonstration built with Next.js, TypeScript, Tailwind CSS and shadcn/ui. It showcases receiving, putaway, picking, packing, shipping, inventory and analytics workflows using fictional local mock data.",
+      "WMS is a frontend-only warehouse management system demonstration built with Next.js, TypeScript, Tailwind CSS and shadcn/ui. It showcases receiving, putaway, picking, packing, shipping, inventory and analytics workflows using fictional local mock data.",
   },
 };

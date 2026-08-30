@@ -13,7 +13,7 @@ export default function ReportsPage() {
     <div className="flex flex-col gap-6">
       <PageHeader
         title="Report Center"
-        description="Operational and inventory reports across the Nexora WMS network."
+        description="Operational and inventory reports across the WMS network."
         breadcrumbs={[{ label: "Analytics" }, { label: "Reports" }]}
       />
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">

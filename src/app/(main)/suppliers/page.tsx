@@ -43,7 +43,7 @@ export default function SuppliersPage() {
     <div className="flex flex-col gap-6">
       <PageHeader
         title="Suppliers"
-        description="Supplier directory across all Nexora WMS distribution centres."
+        description="Supplier directory across all WMS distribution centres."
         breadcrumbs={[{ label: "Suppliers" }]}
       />
       <DataTable
