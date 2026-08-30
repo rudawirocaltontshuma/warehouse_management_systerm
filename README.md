@@ -1,146 +1,114 @@
-# Next.js Admin Template with TypeScript & Shadcn UI
+# Nexora WMS — Warehouse Management Platform
 
-**Studio Admin** - Includes multiple dashboards, authentication layouts, customizable theme presets, and more.
+A frontend-only, high-fidelity warehouse management system (WMS) demonstration built with **Next.js**,
+**TypeScript**, **Tailwind CSS** and **shadcn/ui**. It showcases the information architecture, data
+density and operational workflows of a modern enterprise logistics product — receiving, putaway,
+picking, packing, shipping, inventory, orders, workforce and analytics — using entirely fictional,
+locally generated mock data.
 
-<img src="https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/main/media/dashboard.png?version=5" alt="Dashboard Screenshot">
+> **Portfolio disclaimer:** This project is a frontend-only Warehouse Management System demonstration
+> created for portfolio purposes. It uses fictional mock data and does not connect to a production
+> database, authentication provider, warehouse hardware, carrier service, ERP system or external
+> business API.
 
-Most admin templates I found, free or paid, felt cluttered, outdated, or too rigid. I built this as a cleaner alternative with features often missing in others, such as theme toggling and layout controls, while keeping the design modern, minimal, and flexible.
+## Overview
 
-> **View demo:** [studio admin](https://next-shadcn-admin-dashboard.vercel.app)
-
-> [!NOTE]
-> Looking for the Base UI version? Check out [next-shadcn-admin-dashboard-baseui](https://github.com/arhamkhnz/next-shadcn-admin-dashboard-baseui).
->
-> Looking for the React Aria version? Check out [arhamkhnz/next-shadcn-admin-dashboard-aria](https://github.com/arhamkhnz/next-shadcn-admin-dashboard-aria).
->
-> Looking for the TanStack Start version? Check out [tanstack-shadcn-admin-dashboard](https://github.com/arhamkhnz/tanstack-shadcn-admin-dashboard).
-
-> [!TIP]
-> I’m also working on Nuxt.js and Svelte versions of this dashboard. They’ll be live soon.
+Nexora WMS simulates the day-to-day operations of a four-warehouse South African distribution network:
+Johannesburg, Cape Town, Durban and Pretoria. Every screen — from the executive dashboard down to a
+single bin location — is backed by deterministic, locally generated mock data with realistic SKUs,
+customers, suppliers and workers.
 
 ## Features
 
-- Built with Next.js 16, TypeScript, Tailwind CSS v4, and Shadcn UI  
-- Responsive and mobile-friendly  
-- Customizable theme presets (light/dark modes with color schemes like Tangerine, Brutalist, and more)  
-- Flexible layouts (collapsible sidebar, variable content widths)  
-- Authentication flows and screens  
-- Prebuilt dashboards (Default, CRM, Finance, Analytics, Productivity) plus legacy variants  
-- Role-Based Access Control (RBAC) with config-driven UI and multi-tenant support *(planned)*  
+- **Executive dashboard** with KPIs, trend charts and operational widgets
+- **Warehouse operations**: receiving, putaway, picking, packing, shipping, returns
+- **Inventory management**: stock levels, movements, adjustments, cycle counts, transfers
+- **Order management**: orders, sales orders, purchase orders, backorders
+- **Product catalog**: products, categories, product locations, barcode management
+- **Warehouse structure**: warehouses, zones, aisles, bins/locations
+- **Suppliers**: directory and performance scorecards
+- **Workforce**: workers, tasks (list + Kanban board), productivity, shifts
+- **Logistics**: shipments, carriers, delivery routes
+- **Analytics & reporting**: warehouse, inventory and fulfillment analytics, a report center
+- **Global command palette** (`⌘K` / `Ctrl+K`) searching products, orders, shipments, suppliers and more
+- **Notifications center**, **warehouse switcher**, **demo mode indicator**
+- Fully responsive, from 320px mobile up to large desktops, with light/dark/system themes
 
-> [!NOTE]
-> The default dashboard uses the **shadcn neutral** theme.  
-> It also includes additional color presets inspired by [Tweakcn](https://tweakcn.com):  
->
-> - Tangerine  
-> - Neo Brutalism  
-> - Soft Pop  
->
-> You can create more presets by following the same structure as the existing ones.
+## Modules
 
-> Looking for the **Next.js 15** version?  
-> Check out the [`archive/next15`](https://github.com/arhamkhnz/next-shadcn-admin-dashboard/tree/archive/next15) branch.  
-> This branch contains the setup prior to upgrading to Next 16 and the React Compiler.
+| Area | Routes |
+| --- | --- |
+| Dashboard | `/dashboard` |
+| Warehouse Operations | `/receiving`, `/putaway`, `/picking`, `/packing`, `/shipping`, `/returns` |
+| Inventory | `/inventory`, `/stock-levels`, `/stock-movements`, `/adjustments`, `/cycle-counts`, `/transfers` |
+| Orders | `/orders`, `/sales-orders`, `/purchase-orders`, `/backorders` |
+| Products | `/products`, `/categories`, `/product-locations`, `/barcodes` |
+| Warehouses | `/warehouses`, `/zones`, `/aisles`, `/bins`, `/locations/[id]` |
+| Suppliers | `/suppliers`, `/supplier-performance` |
+| Workforce | `/workers`, `/tasks`, `/tasks/board`, `/productivity`, `/shifts` |
+| Logistics | `/shipments`, `/carriers`, `/routes`, `/logistics` |
+| Analytics | `/analytics`, `/analytics/inventory`, `/analytics/fulfillment`, `/reports` |
+| Administration | `/settings` |
+| Showcase | `/about` |
 
-> Looking for the **Next.js 14 + Tailwind CSS v3** version?  
-> Check out the [`archive/next14-tailwindv3`](https://github.com/arhamkhnz/next-shadcn-admin-dashboard/tree/archive/next14-tailwindv3) branch.  
-> It has a different color theme and is not actively maintained, but I try to keep it updated with major changes.  
+## Technology Stack
 
-## Tech Stack
+- [Next.js](https://nextjs.org/) (App Router, React Server Components)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/) (Radix-based component primitives)
+- [Recharts](https://recharts.org/) for all data visualization
+- [Lucide](https://lucide.dev/) icons
+- [Zustand](https://zustand-demo.pmnd.rs/) for local preference state
 
-- **Framework**: Next.js 16 (App Router), TypeScript, Tailwind CSS v4  
-- **UI Components**: Shadcn UI  
-- **Validation**: Zod  
-- **Forms & State Management**: React Hook Form, Zustand  
-- **Tables & Data Handling**: TanStack Table  
-- **Tooling & DX**: Biome, Husky  
+## Architecture
 
-## Screens
-
-### Available
-- Default Dashboard  
-- CRM Dashboard  
-- Finance Dashboard  
-- Analytics Dashboard  
-- Productivity Dashboard  
-- E-commerce Dashboard  
-- Academy Dashboard  
-- Logistics Dashboard  
-- Infrastructure Dashboard  
-- File Manager  
-- Patient Monitoring  
-- Chat Page  
-- Email Page  
-- Profile  
-- Users Management  
-- Roles Management  
-- Kanban Board  
-- Tasks Page  
-- Invoice Page  
-- Calendar Page  
-- Authentication (4 screens)  
-- Legacy: Default v1, CRM v1, Finance v1, Analytics v1
-
-### Planned
-I’ve added all the planned screens. Feel free to open an issue for requesting something specific.
-
-## Colocation File System Architecture
-
-This project follows a **colocation-based architecture** each feature keeps its own pages, components, and logic inside its route folder.  
-Shared UI, hooks, and configuration live at the top level, making the codebase modular, scalable, and easier to maintain as the app grows.
-
-For a full breakdown of the structure with examples, see the [Next Colocation Template](https://github.com/arhamkhnz/next-colocation-template).
-
-## Getting Started
-
-You can run this project locally, or deploy it instantly with Vercel.
-
-### Deploy with Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Farhamkhnz%2Fnext-shadcn-admin-dashboard)
-
-_Deploy your own copy with one click._
-
-### Run locally
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/arhamkhnz/next-shadcn-admin-dashboard.git
-   ```
-   
-2. **Navigate into the project**
-   ```bash
-    cd next-shadcn-admin-dashboard
-   ```
-   
-3. **Install dependencies**
-   ```bash
-    npm install
-   ```
-
-4. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-Your app will be running at [http://localhost:3000](http://localhost:3000)
-
-### Formatting and Linting
-
-Format, lint, and organize imports
-```bash
-npx @biomejs/biome check --write
 ```
-> For more information on available rules, fixes, and CLI options, refer to the [Biome documentation](https://biomejs.dev/).
+src/
+  app/                 Next.js App Router routes (one folder per module)
+  components/
+    ui/                shadcn/ui primitives
+    wms/                Reusable WMS components: DataTable, KpiCard, charts,
+                        StatusBadge, ActivityTimeline, DetailShell, etc.
+  data/                Per-domain mock data modules (products, orders, ...)
+    wms/               Deterministic seeded generator + shared constants
+  navigation/          Sidebar navigation configuration
+  types/               Domain types (Product, Order, Shipment, Worker, ...)
+```
 
----
+### Mock data approach
 
-> [!IMPORTANT]  
-> This project is updated frequently. If you’re working from a fork or an older clone, pull the latest changes before syncing. Some updates may include breaking changes.
+All data lives in `src/data/wms/generate.ts`, built from a small seeded pseudo-random generator
+(`src/data/wms/rng.ts`) so the dataset is large (80+ products, 100+ orders, 150+ inventory records,
+150+ stock movements, and more), relationally consistent (orders reference real products and
+warehouses, shipments reference real orders, etc.), and stable across renders — no backend or
+database required. Per-domain files under `src/data/` (e.g. `products.ts`, `orders.ts`,
+`receiving.ts`) simply re-export the relevant slices for a clean import surface.
 
----
+### Reusable components
 
-Contributions are welcome. Feel free to open issues, feature requests, or start a discussion.
+Nearly every list page is built on a single generic `DataTable` component (search, sort, filter,
+pagination, export-preview) and every detail page on a shared `DetailShell`/`DetailField` pattern,
+keeping the ~90 routes consistent while remaining easy to extend.
 
+## Responsive Design
 
-**Happy Vibe Coding!**
+The layout is verified from 320px through 1440px+: the sidebar becomes a navigation drawer, the
+header compacts, tables scroll horizontally within their own container, filters move into bottom
+sheets, and detail views remain fully usable on a phone-sized screen.
+
+## Local Development
+
+```bash
+npm install
+npm run dev       # start the dev server
+npm run build     # production build
+npm run lint      # Biome lint
+npm run check     # Biome format + lint check
+```
+
+## Project Structure
+
+See [Architecture](#architecture) above. The codebase avoids unnecessary abstraction — shared UI
+lives in `components/wms`, domain types in `types/wms.ts`, and each route's `page.tsx` composes
+those primitives with the data it needs.

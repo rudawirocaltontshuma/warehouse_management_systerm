@@ -1,20 +1,20 @@
 export const users = [
   {
     id: "1",
-    name: "Arham Khan",
-    username: "Aarhamkhnz",
-    email: "hello@arhamkhnz.com",
-    avatar: "https://avatars.githubusercontent.com/u/43849669",
-    role: "administrator",
+    name: "Jordan Mitchell",
+    username: "jordan.mitchell",
+    email: "jordan.mitchell@nexorawms.demo",
+    avatar: "",
+    role: "Operations Administrator",
   },
   {
     id: "2",
-    name: "Ammar Khan",
-    username: "ammarkhnz",
-    email: "hello@ammarkhnz.com",
+    name: "Naledi Khumalo",
+    username: "naledi.khumalo",
+    email: "naledi.khumalo@nexorawms.demo",
     avatar: "",
-    role: "admin",
+    role: "Warehouse Manager",
   },
-];
+] as const;
 
 export const rootUser = users[0];

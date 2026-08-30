@@ -1,14 +1,13 @@
-import packageJson from "../../package.json";
-
 const currentYear = new Date().getFullYear();
 
 export const APP_CONFIG = {
-  name: "Studio Admin",
-  version: packageJson.version,
-  copyright: `© ${currentYear}, Studio Admin.`,
+  name: "Nexora WMS",
+  tagline: "Warehouse Management Platform",
+  version: "1.0.0",
+  copyright: `© ${currentYear}, Nexora WMS. Portfolio demonstration.`,
   meta: {
-    title: "Studio Admin - Modern Next.js Dashboard Starter Template",
+    title: "Nexora WMS — Warehouse Management Platform",
     description:
-      "Studio Admin is a modern, open-source dashboard starter template built with Next.js 16, Tailwind CSS v4, and shadcn/ui. Perfect for SaaS apps, admin panels, and internal tools—fully customizable and production-ready.",
+      "Nexora WMS is a frontend-only warehouse management system demonstration built with Next.js, TypeScript, Tailwind CSS and shadcn/ui. It showcases receiving, putaway, picking, packing, shipping, inventory and analytics workflows using fictional local mock data.",
   },
 };
