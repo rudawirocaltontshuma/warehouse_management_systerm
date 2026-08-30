@@ -1,4 +1,4 @@
-// Domain types for the Nexora WMS portfolio demonstration.
+// Domain types for the WMS portfolio demonstration.
 // All data described by these types is fictional and generated locally — see src/data/wms.
 
 export type ID = string;
