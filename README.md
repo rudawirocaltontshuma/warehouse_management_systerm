@@ -1,4 +1,4 @@
-# WMS — Warehouse Management Platform
+# Dimension WMS — Warehouse Management Platform
 
 A frontend-only, high-fidelity warehouse management system (WMS) demonstration built with **Next.js**,
 **TypeScript**, **Tailwind CSS** and **shadcn/ui**. It showcases the information architecture, data
@@ -13,7 +13,7 @@ locally generated mock data.
 
 ## Overview
 
-WMS simulates the day-to-day operations of a four-warehouse South African distribution network:
+Dimension WMS simulates the day-to-day operations of a four-warehouse South African distribution network:
 Johannesburg, Cape Town, Durban and Pretoria. Every screen — from the executive dashboard down to a
 single bin location — is backed by deterministic, locally generated mock data with realistic SKUs,
 customers, suppliers and workers.
