@@ -29,7 +29,7 @@ export default function ShipmentsLogisticsPage() {
     <div className="flex flex-col gap-6">
       <PageHeader
         title="Shipments"
-        description="All shipments in transit across the WMS logistics network."
+        description="All shipments in transit across the Dimension WMS logistics network."
         breadcrumbs={[{ label: "Logistics" }, { label: "Shipments" }]}
       />
       <DataTable
